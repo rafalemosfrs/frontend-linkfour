@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const login = async (email, password) => {
   try {
-    const response = await axios.post('http://localhost:4000/login', { email, password }, {
+    const response = await axios.post('https://linkfour-backend.vercel.app/login', { email, password }, {
       headers: { 'Content-Type': 'application/json' },
     });
 
